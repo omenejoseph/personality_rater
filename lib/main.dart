@@ -46,6 +46,7 @@ class _MyAppState extends State<MyApp> {
 
   int index = 0;
   int score = 0;
+
   @override
   Widget build(BuildContext context) {
     void updateScore(int newScore){
@@ -62,6 +63,7 @@ class _MyAppState extends State<MyApp> {
     void restartQuiz() {
       setState(() {
         index = 0;
+        score = 0;
       });
     }
 
